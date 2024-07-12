@@ -1,0 +1,132 @@
+:root {
+  --border-radius: 5px;
+  --cor-fundo: #181820;
+  --cor-fundo-secundaria: #21212b;
+  --cor-primaria: #ffffff;
+  --cor-secundaria: #ff4d29;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--cor-fundo);
+  color: var(--cor-primaria);
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  width: 55vw;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3em;
+  margin-top: 5%;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+input {
+  background-color: var(--cor-fundo-secundaria);
+  color: var(--cor-primaria);
+  font-size: 0.8em;
+  font-weight: bold;
+  padding: 12px;
+  border-radius: var(--border-radius);
+  flex: 0.85;
+  border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  font-size: 0.9em;
+  border-radius: var(--border-radius);
+  padding: 8px;
+  border: none;
+  flex: 0.15;
+  transition: 0.3s;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.botao-adicionar {
+  color: var(--cor-primaria);
+  background-color: var(--cor-secundaria);
+}
+
+.container-tarefas {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tarefa {
+  background-color: var(--cor-fundo-secundaria);
+  padding: 8px;
+  border-left: 0.3vw solid var(--cor-secundaria);
+  border-radius: 0 var(--border-radius) var(--border-radius) 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s;
+}
+
+.concluida {
+  opacity: 0.4;
+}
+
+.concluida p {
+  text-decoration: wavy underline var(--cor-secundaria);
+}
+
+.tarefa p {
+  font-size: 1.2em;
+}
+
+.tarefa .container-botoes {
+  display: flex;
+  gap: 10px;
+}
+
+.botao-remover {
+  background-color: var(--cor-secundaria);
+}
+
+.botao-concluir {
+  color: var(--cor-primaria);
+  background-color: rgb(0, 163, 22);
+}
+
+section {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.status-lista {
+  background-color: rgb(22, 22, 22);
+  aspect-ratio: 1/1;
+  flex: 0.25;
+  border-radius: var(--border-radius);
+  padding: 25px;
+}
