@@ -1,9 +1,10 @@
 import { useState } from "react";
+import "./RenderizarTarefas.css";
 
-function RenderizarTarefas(props) {
+function RenderizarTarefas({ arrayTarefas, removerTarefa, concluirTarefa }) {
     const [pesquisa, setPesquisa] = useState("");
 
-    const tarefasFiltradas = props.arrayTarefas.filter((tarefa) => {
+    const tarefasFiltradas = arrayTarefas.filter((tarefa) => {
         return tarefa.nomeTarefa.toLowerCase().includes(pesquisa.toLowerCase());
     });
 
@@ -17,14 +18,14 @@ function RenderizarTarefas(props) {
                 <div className="container-botoes">
                     <button
                         className="botao-remover"
-                        onClick={() => props.removerTarefa(index)}
+                        onClick={() => removerTarefa(index)}
                     >
                         🗑️
                     </button>
                     {!tarefa.isConcluida && (
                         <button
                             className="botao-concluir"
-                            onClick={() => props.concluirTarefa(index)}
+                            onClick={() => concluirTarefa(index)}
                         >
                             concluir
                         </button>
@@ -42,7 +43,7 @@ function RenderizarTarefas(props) {
                 onChange={(event) => {
                     setPesquisa(event.target.value);
                 }}
-                placeholder="Pesquisar uma tarefa"
+                placeholder="Pesquise uma tarefa 🔎"
             />
             <div className="container-tarefas">{resultados}</div>
         </>

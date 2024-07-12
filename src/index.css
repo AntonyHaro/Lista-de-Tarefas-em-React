@@ -2,10 +2,10 @@
   --border-radius: 5px;
   --cor-fundo: #181820;
   --cor-fundo-secundaria: #21212b;
-  --cor-fundo-estatisticas: #0c0c11;
+  --cor-input: #0c0c11;
   --cor-primaria: #f8f8f8;
-  --cor-secundaria: #ff3232;
-  --cor-secundaria-hover: #ff1616;
+  --cor-secundaria: #ff4a1d;
+  --cor-secundaria-hover: #ff6854;
 }
 
 * {
@@ -37,24 +37,27 @@ h1 {
   margin-top: 5%;
 }
 
-form {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
+p {
+  word-wrap: break-word;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
 }
 
 input {
-  background-color: var(--cor-fundo-secundaria);
   color: var(--cor-primaria);
+  background-color: var(--cor-input);
   font-size: 0.8em;
   font-weight: bold;
   padding: 12px;
   border-radius: var(--border-radius);
   flex: 0.85;
   border: none;
+  transition: 0.5s;
 }
 
 input:focus {
+  background-color: #06060a;
   outline: none;
 }
 
@@ -72,87 +75,6 @@ button:hover {
   cursor: pointer;
 }
 
-.botao-adicionar {
-  color: var(--cor-primaria);
-  border: 3px solid var(--cor-secundaria);
-  background: transparent;
-}
-
-.botao-adicionar:hover {
-  background-color: var(--cor-secundaria);
-}
-
-.container-tarefas {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.tarefa {
-  background-color: var(--cor-fundo-secundaria);
-  width: 100%;
-  padding: 8px;
-  border-left: 4px solid var(--cor-secundaria);
-  border-radius: 0 var(--border-radius) var(--border-radius) 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transition: width 0.5s, opacity 0.5s, border-color 0.3s;
-}
-
-.tarefa:hover {
-  border-color: var(--cor-secundaria-hover);
-}
-
-.concluida {
-  border-color: var(--cor-fundo-secundaria);
-  width: 85%;
-  opacity: 0.4;
-}
-
-.concluida p {
-  text-decoration: underline #797979;
-}
-
-.tarefa p {
-  font-size: 1.2em;
-}
-
-.tarefa .container-botoes {
-  display: flex;
-  gap: 10px;
-}
-
-.botao-remover {
-  background-color: var(--cor-secundaria);
-}
-
-.botao-remover:hover {
-  background-color: var(--cor-secundaria-hover);
-  border-radius: 50%;
-}
-
-.botao-concluir {
-  color: var(--cor-primaria);
-  background-color: rgb(0, 128, 64);
-}
-
-.botao-concluir:hover {
-  background-color: rgb(0, 185, 93);
-}
-
-section {
-  display: flex;
-  justify-content: flex-end;
-  gap: 10px;
-  margin-bottom: 15%;
-}
-
-.status-lista {
-  text-align: center;
-  border: 2px solid var(--cor-primaria);
-  background-color: var(--cor-fundo-estatisticas);
-  flex: 0.1;
-  border-radius: var(--border-radius);
-  padding: 15px;
+hr {
+  border: 1px solid #3e3e4b;
 }

@@ -1,0 +1,15 @@
+form {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.botao-adicionar {
+  color: var(--cor-primaria);
+  border: 3px solid var(--cor-secundaria);
+  background: transparent;
+}
+
+.botao-adicionar:hover {
+  background-color: var(--cor-secundaria);
+}

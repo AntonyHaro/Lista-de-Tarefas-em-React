@@ -1,0 +1,14 @@
+.estatistica-container {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+  margin-bottom: 15%;
+}
+
+.estatistica-item {
+  border: 2px solid #4b4b5e;
+  background-color: #0f0f14;
+  border-radius: var(--border-radius);
+  padding: 10px;
+}

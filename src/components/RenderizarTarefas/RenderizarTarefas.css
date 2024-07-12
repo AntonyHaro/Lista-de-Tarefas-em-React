@@ -1,0 +1,62 @@
+.container-tarefas {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tarefa {
+  background-color: var(--cor-fundo-secundaria);
+  width: 100%;
+  padding: 8px;
+  border-left: 4px solid var(--cor-secundaria);
+  border-radius: 0 var(--border-radius) var(--border-radius) 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: width 0.5s, opacity 0.5s, border-color 0.3s;
+}
+
+.tarefa:hover {
+  border-color: var(--cor-secundaria-hover);
+}
+
+.tarefa p {
+  transition: 0.3s;
+  font-size: 1.1em;
+}
+
+.tarefa:hover p {
+  margin-left: 15px;
+}
+
+.tarefa .container-botoes {
+  display: flex;
+  gap: 10px;
+}
+
+.botao-remover {
+  background-color: var(--cor-secundaria);
+}
+
+.botao-remover:hover {
+  background-color: var(--cor-secundaria-hover);
+  border-radius: 50%;
+}
+
+.botao-concluir {
+  color: var(--cor-primaria);
+  background-color: rgb(0, 128, 64);
+}
+
+.botao-concluir:hover {
+  background-color: rgb(0, 185, 93);
+}
+
+.concluida {
+  border: transparent;
+  opacity: 0.3;
+}
+
+.concluida p {
+  text-decoration: underline #797979;
+}

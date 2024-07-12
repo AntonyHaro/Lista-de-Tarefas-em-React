@@ -1,7 +1,7 @@
 import { useState } from "react";
-import FormTarefa from "./components/FormTarefa";
-import RenderizarTarefas from "./components/RenderizarTarefas";
-import Estatisticas from "./components/Estatisticas";
+import FormTarefa from "./components/FormTarefa/FormTarefa"
+import RenderizarTarefas from "./components/RenderizarTarefas/RenderizarTarefas";
+import Estatisticas from "./components/Estatisticas/Estatisticas";
 
 function App() {
     const [tarefas, setTarefas] = useState([]);
@@ -10,13 +10,16 @@ function App() {
         setTarefas([...tarefas, tarefa]);
     };
 
-    const concluirTarefa = (tarefa) => {
-        const tarefaConcluida = tarefas[tarefa];
-        tarefaConcluida.isConcluida = true;
+    const concluirTarefa = (index) => {
+        setTarefas(
+            tarefas.map((tarefa, i) =>
+                i === index ? { ...tarefa, isConcluida: true } : tarefa
+            )
+        );
     };
 
-    const removerTarefa = (tarefa) => {
-        tarefas.splice(tarefa, 1);
+    const removerTarefa = (index) => {
+        setTarefas(tarefas.filter((_, i) => i !== index));
     };
 
     const tarefasConcluidas = tarefas.filter(
