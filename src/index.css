@@ -2,8 +2,10 @@
   --border-radius: 5px;
   --cor-fundo: #181820;
   --cor-fundo-secundaria: #21212b;
-  --cor-primaria: #ffffff;
-  --cor-secundaria: #ff4d29;
+  --cor-fundo-estatisticas: #0c0c11;
+  --cor-primaria: #f8f8f8;
+  --cor-secundaria: #ff3232;
+  --cor-secundaria-hover: #ff1616;
 }
 
 * {
@@ -66,11 +68,17 @@ button {
 }
 
 button:hover {
+  border-radius: 13px;
   cursor: pointer;
 }
 
 .botao-adicionar {
   color: var(--cor-primaria);
+  border: 3px solid var(--cor-secundaria);
+  background: transparent;
+}
+
+.botao-adicionar:hover {
   background-color: var(--cor-secundaria);
 }
 
@@ -82,21 +90,28 @@ button:hover {
 
 .tarefa {
   background-color: var(--cor-fundo-secundaria);
+  width: 100%;
   padding: 8px;
-  border-left: 0.3vw solid var(--cor-secundaria);
+  border-left: 4px solid var(--cor-secundaria);
   border-radius: 0 var(--border-radius) var(--border-radius) 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: 0.6s;
+  transition: width 0.5s, opacity 0.5s, border-color 0.3s;
+}
+
+.tarefa:hover {
+  border-color: var(--cor-secundaria-hover);
 }
 
 .concluida {
+  border-color: var(--cor-fundo-secundaria);
+  width: 85%;
   opacity: 0.4;
 }
 
 .concluida p {
-  text-decoration: wavy underline var(--cor-secundaria);
+  text-decoration: underline #797979;
 }
 
 .tarefa p {
@@ -112,21 +127,32 @@ button:hover {
   background-color: var(--cor-secundaria);
 }
 
+.botao-remover:hover {
+  background-color: var(--cor-secundaria-hover);
+  border-radius: 50%;
+}
+
 .botao-concluir {
   color: var(--cor-primaria);
-  background-color: rgb(0, 163, 22);
+  background-color: rgb(0, 128, 64);
+}
+
+.botao-concluir:hover {
+  background-color: rgb(0, 185, 93);
 }
 
 section {
   display: flex;
+  justify-content: flex-end;
   gap: 10px;
-  justify-content: space-between;
+  margin-bottom: 15%;
 }
 
 .status-lista {
-  background-color: rgb(22, 22, 22);
-  aspect-ratio: 1/1;
-  flex: 0.25;
+  text-align: center;
+  border: 2px solid var(--cor-primaria);
+  background-color: var(--cor-fundo-estatisticas);
+  flex: 0.1;
   border-radius: var(--border-radius);
-  padding: 25px;
+  padding: 15px;
 }

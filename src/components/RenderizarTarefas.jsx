@@ -26,7 +26,7 @@ function RenderizarTarefas(props) {
                             className="botao-concluir"
                             onClick={() => props.concluirTarefa(index)}
                         >
-                            Concluir
+                            concluir
                         </button>
                     )}
                 </div>
