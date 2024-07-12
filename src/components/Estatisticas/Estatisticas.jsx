@@ -6,7 +6,7 @@ function Estatisticas({ arrayTarefas, tarefasConcluidas, tarefasPendentes }) {
             ? 0
             : ((tarefasConcluidas / arrayTarefas.length) * 100).toFixed(0);
 
-    const porcentagemPendentes = 100 - porcentagemConcluidas;
+    const porcentagemPendentes = porcentagemConcluidas === 0 ? 0 : 100 - porcentagemConcluidas;
 
     return (
         <section className="estatistica-container">
