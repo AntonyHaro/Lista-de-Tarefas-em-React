@@ -2,6 +2,9 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  background-color: rgba(0, 0, 0, 0.116);
+  padding: 25px;
+  border-radius: var(--border-radius);
 }
 
 .tarefa {
@@ -14,6 +17,7 @@
   justify-content: space-between;
   align-items: center;
   transition: width 0.5s, opacity 0.5s, border-color 0.3s;
+  text-align: center;
 }
 
 .tarefa:hover {
@@ -21,6 +25,8 @@
 }
 
 .tarefa p {
+  /* not working ! */
+  text-align: center;
   transition: 0.3s;
   font-size: 1.1em;
 }
