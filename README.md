@@ -41,14 +41,13 @@ O componente `RenderizarTarefas` recebe as propriedades `arrayTarefas`, `remover
 
 ##### Funcionalidades Implementadas:
 
-- **Filtrar Tarefas**: Utiliza o estado local `pesquisa` para filtrar as tarefas com base no nome da tarefa.
-- **Marcar como Concluída**: Permite que o usuário marque uma tarefa como concluída através da função `props.concluirTarefa`.
-
-- **Remover Tarefa**: Utiliza a função `props.removerTarefa` para remover uma tarefa da lista.
+- **Filtrar Tarefas**
+- **Marcar como Concluída**
+- **Remover Tarefa**
 
 #### Estatisticas
 
-O componente `Estatisticas` recebe as propriedades `arrayTarefas`, `tarefasConcluidas` e `tarefasPendentes`, exibindo estatísticas sobre o número total de tarefas, tarefas concluídas e tarefas pendentes na interface.
+O componente `Estatisticas` recebe as propriedades `arrayTarefas`, `tarefasConcluidas` e `tarefasPendentes`, exibindo estatísticas e percentuais sobre o número total de tarefas, tarefas concluídas e tarefas pendentes na interface.
 
 ## Considerações Finais
 
@@ -56,7 +55,7 @@ A estrutura do código foi planejada para ser modular e escalável, facilitando 
 
 ## Aplicação em Vercel
 
-É possível verificar e fazer o uso da aplicação por meio do link: https://aplicacao
+É possível acessar a aplicação facilmente por meio do link: https://lista-de-tarefas-em-react-seven.vercel.app/
 
 ---
 
