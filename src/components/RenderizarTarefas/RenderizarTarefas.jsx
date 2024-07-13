@@ -36,7 +36,7 @@ function RenderizarTarefas({ arrayTarefas, removerTarefa, concluirTarefa }) {
     });
 
     return (
-        <>
+        <section className="container-tarefas">
             <input
                 type="text"
                 value={pesquisa}
@@ -45,14 +45,14 @@ function RenderizarTarefas({ arrayTarefas, removerTarefa, concluirTarefa }) {
                 }}
                 placeholder="Pesquise uma tarefa 🔎"
             />
-            <div className="container-tarefas">
-                {arrayTarefas.length === 0 || tarefasFiltradas.length === 0 ? (
-                    <p style={{ opacity: "0.3" }}>Nenhuma tarefa!</p>
-                ) : (
-                    resultados
-                )} 
-            </div>
-        </>
+            {arrayTarefas.length === 0 || tarefasFiltradas.length === 0 ? (
+                <p style={{ opacity: "0.3", marginTop: "5%" }}>
+                    Nenhuma tarefa!
+                </p>
+            ) : (
+                resultados
+            )}
+        </section>
     );
 }
 

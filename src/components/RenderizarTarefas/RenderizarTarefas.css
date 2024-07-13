@@ -3,14 +3,14 @@
   flex-direction: column;
   gap: 10px;
   background-color: rgba(0, 0, 0, 0.116);
-  padding: 25px;
+  padding: 2vw;
   border-radius: var(--border-radius);
 }
 
 .tarefa {
   background-color: var(--cor-fundo-secundaria);
   width: 100%;
-  padding: 8px;
+  padding: 0.6vw;
   border-left: 4px solid var(--cor-secundaria);
   border-radius: 0 var(--border-radius) var(--border-radius) 0;
   display: flex;
@@ -25,14 +25,12 @@
 }
 
 .tarefa p {
-  /* not working ! */
-  text-align: center;
   transition: 0.3s;
   font-size: 1.1em;
 }
 
 .tarefa:hover p {
-  margin-left: 15px;
+  margin-left: 1vw;
 }
 
 .tarefa .container-botoes {
