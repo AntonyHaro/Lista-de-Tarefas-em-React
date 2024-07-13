@@ -26,10 +26,9 @@ O componente `App` é o componente principal da aplicação. Ele é responsável
 
 ##### Funcionalidades Implementadas:
 
-- **Adicionar Tarefa**: Utiliza o componente `FormTarefa` para capturar e adicionar novas tarefas ao estado `tarefas`.
-- **Concluir Tarefa**: A função `concluirTarefa` é passada como propriedade para `RenderizarTarefas`, permitindo marcar uma tarefa como concluída.
-
-- **Remover Tarefa**: Utiliza a função `removerTarefa` para remover uma tarefa da lista.
+- **Adicionar Tarefa**
+- **Concluir Tarefa**
+- **Remover Tarefa**
 
 #### FormTarefa
 
