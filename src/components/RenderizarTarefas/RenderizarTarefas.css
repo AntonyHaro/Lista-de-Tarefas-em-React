@@ -15,9 +15,9 @@
   border-radius: 0 var(--border-radius) var(--border-radius) 0;
   display: flex;
   justify-content: space-between;
+  gap: 10px;
   align-items: center;
   transition: width 0.5s, opacity 0.5s, border-color 0.3s;
-  text-align: center;
 }
 
 .tarefa:hover {

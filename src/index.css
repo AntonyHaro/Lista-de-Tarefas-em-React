@@ -51,7 +51,6 @@ input {
   font-weight: bold;
   padding: 1vw;
   border-radius: var(--border-radius);
-  flex: 0.85;
   border: none;
   transition: 0.5s;
 }
@@ -62,7 +61,6 @@ input:focus {
 }
 
 button {
-  font-size: 0.9em;
   border-radius: var(--border-radius);
   padding: 1vw;
   border: none;

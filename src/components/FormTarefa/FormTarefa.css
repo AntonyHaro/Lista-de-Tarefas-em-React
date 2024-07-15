@@ -4,6 +4,10 @@ form {
   gap: 10px;
 }
 
+.input-tarefa {
+  flex: 0.85;
+}
+
 .botao-adicionar {
   color: var(--cor-primaria);
   border: 3px solid var(--cor-secundaria);

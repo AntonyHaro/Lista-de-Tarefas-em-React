@@ -16,6 +16,7 @@ function FormTarefa(props) {
             <input
                 type="text"
                 value={nomeTarefa}
+                className="input-tarefa"
                 onChange={(event) => setNomeTarefa(event.target.value)}
                 placeholder="Nome da Tarefa"
                 required
